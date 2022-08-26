@@ -9,6 +9,7 @@ LEDStateMachine::LEDStateMachine(){
 }
 
 
+/* Set up the relevant pins for the push button and LEDs */
 void LEDStateMachine::setup_pins(){
   //Push Button Pin (connected to GND so must be INPUT_PULLUP)
   pinMode(BUTTON_PIN, INPUT_PULLUP);
@@ -29,7 +30,8 @@ void LEDStateMachine::state_machine(int button_state){
   1: Short Hold / First Press Detection 
   2: Long Hold Detection
   3: Double Press Detection
-  4: LED on for 2 secs, input is ignored during this time */
+  4: LED on for 2 secs, input is ignored during this time 
+  5: Wait state to ensure button is released before restarting state machine */
 
   //State 0 - Waiting for input
   if(state == 0){

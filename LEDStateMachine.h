@@ -17,7 +17,6 @@
 #define LIMIT_LED_ON 2000
 
 
-
 class LEDStateMachine{
   public:
     LEDStateMachine();
@@ -35,9 +34,5 @@ class LEDStateMachine{
     uint8_t state = 0;
     uint8_t active_led;
 };
-
-
-
-
 
 #endif
