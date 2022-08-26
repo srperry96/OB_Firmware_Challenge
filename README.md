@@ -1,4 +1,4 @@
-# OB_Firmware_Challenge
+# Open Bionics Firmware Challenge
 
 Firmware challenge using an Arduino Uno with a push button and four LEDs. The LEDs should light up dependent on how the button is pressed: Short Hold, Long Hold, Single Press, Double Press.
 
